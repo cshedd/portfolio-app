@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Cherie Shedd</title>
+  <title>Home</title>
   <meta name="keywords" content="clean, simplicity, theme, html5, sidebar, masonry">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  -->  <link rel="icon" type="image/png" href="img/icon.png" />
@@ -15,6 +15,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-responsive.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/umbg.css">
+  <link rel="stylesheet" href="css/umbg.min.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min">
   
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -51,8 +55,6 @@
 
   <!--Header-->
   <header id="fullscreen">
-    
-      <div class="logo" id="full"><a class="ajax-link" href="index.html">CHERIE SHEDD</a></div>
       
         <div class="menu-index" id="button">
         <i class="fa fa-bars"></i>
@@ -64,57 +66,25 @@
 
   <!--Content-->
 
-  <!-- About Me Section -->
-
-  <div class="content" id="ajax-content">
+    <div class="content" id="ajax-content">
 
 
         <div class="text-intro">
 
-          <h1>The Gist</h1>
-                    
-          <div class="one-column">
-            <p>Web Developer || Austin, TX</p>
-          
-          </div>
+        <div id="jumbotron">
 
-
-          <div class="two-column">
-
-            <p>Hi, my name is Cherie Shedd and I am a growing full-stack web developer in the Austin tech world.<br/><br/>
-            
-            I have a passion for building with code and creating dynamic, user-friendly applications. I have a sharp eye for design and appealing aesthetics and a working knowledge of back-end technologies. Well versed in Javascript, jQuery, Node.js, Express, React.js, MongoDB, MySQL, HTML5, CSS3, and Passport OAuth.<br/><br/>
-
-            As I near graduation from The Coding Bootcamp at UT Austin with a certification in full-stack web development, I am eager to continue honing and developing my skills. I am actively and primarily seeking a junior front-end developer position with opportunities for mentorship and growth.<br/><br/>
-
-            Technology is always changing, and I am interested in what's new and how to use it in my own applications. I welcome comments and suggestions, so feel free to contact me.<br/><br/>
-
-            <h2 class="signature">|| Cheers, Cher</h2>
-            
-            </p>
-          
-          </div>          
-
-
-        </div>
-        </div>
-
-  <div class="content" id="ajax-content">
-
-
-        <div class="text-intro" id="site-type">
-
-          <h1>Please Visit My</h1>
-          <h1 class="typewrite"><span>Resume</span></h1>
-          <!-- <p></p> -->
+          <h1>CHER SHEDD</h1>
 
         </div>
 
-  <div id="ajax-sidebar"></div>
+        </div>
+        
+    </div>      
 
-  <!--Footer-->
 
-  <footer>
+ 
+
+<!--   <footer>
 
     <div class="footer-margin">
       <div class="social-footer">
@@ -122,18 +92,28 @@
         <a href="https://www.behance.net/TomaszMazurczak"><i class="fa fa-behance"></i></a>
       
       </div>     
-      <div class="copyright">Cherie Shedd | 2016</div>
+      <div class="copyright">Cher Shedd | 2016</div>
       
 
     
     </div>
 
 
-  </footer>
+  </footer> -->
 
 
 
 <!--Scripts-->
+  <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery.umbg.js" type="text/javascript"></script>
+  <script src="js/jquery.umbg.min.js" type="text/javascript"></script>
+
+  <script>
+    $('body').umbg({
+        'mediaPlayerType': 'YouTube', // YouTube, Vimeo, Dailymotion, Wistia, HTML5, Image, or Color.
+        'mediaId': 'https://www.youtube.com/watch?v=xxj3wOBuSL0&list=PLD0H9GUAnfa89VWBaSJkJXhJNbIa6xAxM&index=11.mp4' // add .mp4
+    });
+  </script>
 
   <script src="js/jquery.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
@@ -144,6 +124,7 @@
   <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
   <script src="js/jquery.jkit.1.2.16.min.js"></script>
  
+  
   <script src="js/script.js" type="text/javascript"></script>
   
 	<script>
@@ -152,7 +133,6 @@
     // Animation complete.
     });
   </script>
-
 
 </body>
 </html>

@@ -4,6 +4,8 @@ var mongoose = require('mongoose');
 var request = require('request');
 var cheerio = require('cheerio');
 var logger = require('morgan');
+mongoose.Promise = Promise;
+
 
 var PORT = 3000;
 var app = express();
@@ -35,21 +37,21 @@ db.once('open', function () {
 app.listen(process.env.PORT || 3000);
 console.log("Listening on port", PORT);
 
-// MODELS =======================================
-var User = require('./models/User.js');
+// // MODELS =======================================
+// var User = require('./models/User.js');
 
-var exampleUser = new User ({
-	name: 'Sherlock Holmes'
-});
+// var exampleUser = new User ({
+// 	name: 'Sherlock Holmes'
+// });
 
-exampleUser.save(function(err, doc) {
-	if (err) {
-		console.log(err);
-	}
-	else {
-		console.log(user);
-	}
-});
+// exampleUser.save(function(err, doc) {
+// 	if (err) {
+// 		console.log(err);
+// 	}
+// 	else {
+// 		console.log(user);
+// 	}
+// });
 
 
 // MONGO URI: mongodb://heroku_ndp8gp94:sb9svak977ksqmhni15m5a72vo@ds053126.mlab.com:53126/heroku_ndp8gp94

@@ -390,6 +390,10 @@ CONTENT
   letter-spacing: 5px;
 }
 
+.jumbotron {
+  font: white bold;
+}
+
 .content .text-intro p{
   font-size:13px;
   color:#8d8d8d;
