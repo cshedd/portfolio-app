@@ -6,9 +6,12 @@ var cheerio = require('cheerio');
 var logger = require('morgan');
 mongoose.Promise = Promise;
 
-
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 var app = express();
+
+app.listen(PORT, function() {
+	console.log("App listening on PORT: " + PORT);
+});
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -33,9 +36,6 @@ db.on('error', function (err) {
 db.once('open', function () {
   console.log('Mongoose connection successful.');
 });
-
-app.listen(process.env.PORT || 3000);
-console.log("Listening on port", PORT);
 
 // // MODELS =======================================
 // var User = require('./models/User.js');
