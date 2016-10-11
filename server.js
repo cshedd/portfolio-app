@@ -44,10 +44,15 @@ app.get('/contact', function(req, res) {
 
 app.post('/contact', function(req, res) {
 
+	console.log(req.body);
+
+	var User = require('./models/User');
+
 	var newUser = new User(req.body);
 	newUser.save(function(err, doc) {
 		if(err) {
 			console.log(err);
+			res.send(err);
 		} else {
 			res.send(doc);
 		}

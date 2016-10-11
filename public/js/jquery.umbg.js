@@ -123,6 +123,8 @@
 				mute,
 				unmute,
 				umbgMuted,
+				// CHANGE HERE
+				
 
 			// Variables for disable on mobile devices functions.
 				disableMobileAll = ( isMobilePhone() || isMobileTablet() ) && opts.disableOnMobileAll === 1,

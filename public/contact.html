@@ -72,7 +72,8 @@
           <h1>Contact</h1>
           <p>I look forward to hearing from you and thanks for visiting.</p>
 
-          <form method="post" action="contact" data-jkit="[form:validateonly=true]">
+          <form method="post" id="contact-form" onsubmit="submitForm()" action="contact" data-jkit="[form:validateonly=true]">
+
           
           <div class="contact-one">
             <p>
@@ -99,6 +100,24 @@
             
             <p>
             </p>
+
+            <script>
+
+            function submitForm() {
+              var frm = document.getElementById('contact-form');
+              var formData = {
+                name: frm.name.value,
+                email: frm.email.value,
+                message: frm.message.value
+              };
+              $.post('contact', formData).then(function () {
+                frm.reset();
+              })
+              return false;
+            }
+
+            </script>
+
           </form>
           
           
