@@ -33,24 +33,6 @@ db.once('open', function () {
 app.listen(process.env.PORT || 3000);
 console.log("Listening on port", PORT);
 
-// MODELS =======================================
-var User = require('./models/User.js');
-
-var exampleUser = new User ({
-	name: 'Sherlock Holmes',
-	email: 'sherlock@gmail.com',
-	message: 'hey, great work'
-});
-
-exampleUser.save(function(err, doc) {
-	if (err) {
-		console.log(err);
-	}
-	else {
-		console.log(user);
-	}
-});
-
 // ROUTES =================================
 app.get('/', function(req, res){
     res.sendFile('./public/index.html');
