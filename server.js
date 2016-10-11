@@ -42,7 +42,7 @@ app.get('/contact', function(req, res) {
 	request()
 });
 
-app.post('/contact/:id', function(req, res) {
+app.post('/contact', function(req, res) {
 
 	var newUser = new User(req.body);
 	newUser.save(function(err, doc) {
@@ -53,6 +53,7 @@ app.post('/contact/:id', function(req, res) {
 		}
 	});
 });
+
 
 
 // MONGO URI: mongodb://heroku_ndp8gp94:sb9svak977ksqmhni15m5a72vo@ds053126.mlab.com:53126/heroku_ndp8gp94
