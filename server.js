@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
 var request = require('request');
 var cheerio = require('cheerio');
 var logger = require('morgan');
+var cheerio = require('cheerio');
 mongoose.Promise = Promise;
 
 
@@ -41,7 +42,9 @@ console.log("Listening on port", PORT);
 var User = require('./models/User.js');
 
 var exampleUser = new User ({
-	name: 'Sherlock Holmes'
+	name: 'Sherlock Holmes',
+	email: 'sherlock@gmail.com',
+	message: 'hey, great work'
 });
 
 exampleUser.save(function(err, doc) {
