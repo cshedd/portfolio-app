@@ -19,11 +19,6 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}))
 
 app.use(express.static('./public'));
 
-// MAIN ROUTE =================================
-app.get('/', function(req, res){
-    res.sendFile('./public/index.html');
-});
-
 // MONGO CONNECTION =================================
 mongoose.connect('mongodb://localhost/portfolioDB');
 var db = mongoose.connection;
@@ -54,6 +49,27 @@ exampleUser.save(function(err, doc) {
 	else {
 		console.log(user);
 	}
+});
+
+// ROUTES =================================
+app.get('/', function(req, res){
+    res.sendFile('./public/index.html');
+});
+
+app.get('/contact', function(req, res) {
+	request()
+});
+
+app.post('/contact/:id', function(req, res) {
+
+	var newUser = new User(req.body);
+	newUser.save(function(err, doc) {
+		if(err) {
+			console.log(err);
+		} else {
+			res.send(doc);
+		}
+	});
 });
 
 
