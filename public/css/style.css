@@ -9,9 +9,10 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 
-.jumbotron {
-  font: #ffffff;
-  font-size: 80px;
+#jumbo {
+  color: #ffffff;
+  font-size: 120px;
+  margin-top: 400px;
 
 }
 
