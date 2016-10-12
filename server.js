@@ -19,8 +19,12 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}))
 
 app.use(express.static('./public'));
 
+var MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/portfolioDB';
+
+console.log(MONGO_URI);
+
 // MONGO CONNECTION =================================
-mongoose.connect('mongodb://localhost/portfolioDB');
+mongoose.connect(MONGO_URI);
 var db = mongoose.connection;
 
 db.on('error', function (err) {
