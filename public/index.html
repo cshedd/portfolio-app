@@ -15,10 +15,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style-responsive.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/umbg.css">
-  <link rel="stylesheet" href="css/umbg.min.css">
-  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min">
   
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,7 +37,6 @@
 
 <div class="opacity-nav">
 
-<!-- changes to pages made here -->
     <ul class="menu-fullscreen"> 
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -52,9 +47,10 @@
 
 </div>
 
-
-  <!--Header-->
+<!--Header-->
   <header id="fullscreen">
+    
+      <div class="logo" id="full"><a class="ajax-link" href="index.html"></a></div>
       
         <div class="menu-index" id="button">
         <i class="fa fa-bars"></i>
@@ -62,20 +58,29 @@
 
   </header>
 
-  <!--Content-->
-
-<!--     <div class="content" id="ajax-content">
- -->
-
-        <div class="jumbotron" id="jumbo">CHER SHEDD</div>
-
-        
-    </div>      
+  <div class="clear"></div> 
 
 
- 
+  <div class="content" id="ajax-content">
 
-<!--   <footer>
+
+        <div class="text-intro" id="site-type">
+
+          <h1><bold>Hey, I'm Cher. </bold></h1>
+          <h1 class="typewrite"><span></span></h1>
+          <!-- <p></p> -->
+
+        </div>
+
+  </div>      
+
+
+  
+  <div id="ajax-sidebar"></div>
+
+  <!--Footer-->
+
+  <footer>
 
     <div class="footer-margin">
       <div class="social-footer">
@@ -83,52 +88,38 @@
         <a href="https://www.behance.net/TomaszMazurczak"><i class="fa fa-behance"></i></a>
       
       </div>     
-      <div class="copyright">Cher Shedd | 2016</div>
+      <div class="copyright">Cher Shedd || 2016</div>
       
 
     
     </div>
 
 
-  </footer> -->
+  </footer>
 
 
 
 <!--Scripts-->
-  <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="js/jquery.umbg.js" type="text/javascript"></script>
-  <script src="js/jquery.umbg.min.js" type="text/javascript"></script>
-
-  <script>
-    $('body').umbg({
-        'mediaPlayerType': 'YouTube', // YouTube, Vimeo, Dailymotion, Wistia, HTML5, Image, or Color.
-        'mediaId': 'xxj3wOBuSL0',
-        // add .mp4
-        
-        // http://www.youtube.com/v/xxj3wOBuSL0?version=3&loop=1&playlist=xxj3wOBuSL0
-
-
-    });
-  </script>
 
   <script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easing.min.js"></script>
-	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
   <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
   <script src="js/typed.js" type="text/javascript"></script>
   <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>  
   <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
   <script src="js/jquery.jkit.1.2.16.min.js"></script>
  
+  <script src="js/script_index.js" type="text/javascript"></script>
+
   
-  <script src="js/script.js" type="text/javascript"></script>
-  
-	<script>
+  <script>
     $('#button').on('click', function() {
       $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
     // Animation complete.
     });
   </script>
+
 
 </body>
 </html>
