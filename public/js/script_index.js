@@ -171,7 +171,7 @@ $(document).ready(function(){
             strings: ["Like Sonny and Cher.", "Welcome to my portfolio."],
             typeSpeed: 100,
             backDelay: 500,
-            loop: true,
+            loop: false,
             contentType: 'html', // or text
             // defaults to false for infinite loop
             loopCount: false,
