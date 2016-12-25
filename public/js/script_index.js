@@ -168,7 +168,7 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["Welcome to my portfolio."],
+            strings: ["Nice to meet you." , "Welcome to my portfolio."],
             typeSpeed: 100,
             backDelay: 500,
             loop: false,
