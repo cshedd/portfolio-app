@@ -24,7 +24,7 @@
     "express": "^4.14.0",
     "logger": "0.0.1",
     "mongodb": "^2.2.10",
-    "mongoose": "^4.6.3",
+    "mongoose": "^5.7.6",
     "morgan": "^1.7.0",
     "node": "0.0.0",
     "request": "^2.75.0"
